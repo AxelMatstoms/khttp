@@ -1,0 +1,4 @@
+package khttp
+
+class HttpMessage() {
+}

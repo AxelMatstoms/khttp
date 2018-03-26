@@ -1,0 +1,33 @@
+package khttp
+
+enum class Status(val statusCode: Int, val reasonPhrase: String) {
+    Continue(100, "Continue"),
+    SwitchingProtocols(101, "Switching Protocols"),
+    OK(200, "OK"),
+    Created(201, "Created"),
+    Accepted(202, "Accepted"),
+    NonAuthoritativeInformation(203, "Non-Authoritative Information"),
+    NoContent(204, "No Content"),
+    ResetContent(205, "Reset Content"),
+    MultipleChoices(300, "Multiple Choices"),
+    MovedPermanently(301, "Moved Permanently"),
+    Found(302, "Found"),
+    SeeOther(303, "See Other"),
+    NotModified(304, "Not Modified"),
+    BadRequest(400, "Bad Request"),
+    Unauthorized(401, "Unauthorized"),
+    PaymentRequired(402, "Payment Required"),
+    Forbidden(403, "Forbidden"),
+    NotFound(404, "Not Found"),
+    MethodNotAllowed(405, "Method Not Allowed"),
+    NotAcceptable(406, "Not Acceptable"),
+    RequestTimeout(408, "Request Time-out"),
+    Gone(410, "Gone"),
+    LengthRequired(411, "Length Required"),
+    InternalServerError(500, "Internal Server Error"),
+    NotImplemented(501, "Not Implemented"),
+    BadGateway(502, "Bad Gateway"),
+    ServiceUnavailable(503, "ServiceUnavailable"),
+    GatewayTimeout(504, "Gateway Time-out"),
+    HttpVersionNotSupported(505, "HTTP Version not supported")
+}
